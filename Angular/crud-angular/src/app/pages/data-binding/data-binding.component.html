@@ -23,3 +23,10 @@
 <h1>Two-way Data Binding</h1>
 <input type="text" class="form-control" [(ngModel)]="textInput">
 <p class="text-default">{{textInput}}</p>
+<hr>
+
+<h1>Dados entre Components</h1>
+<app-button [btnText]="'Success'" [btnType]="'btn-success'"></app-button>
+<app-button [btnText]="'Danger'" [btnType]="'btn-danger'"></app-button>
+<app-button btnText="Primary" btnType="btn-primary"></app-button>
+<app-button btnText="Default" btnType="btn-default"></app-button>
