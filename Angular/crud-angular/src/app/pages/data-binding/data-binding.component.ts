@@ -14,6 +14,8 @@ export class DataBindingComponent implements OnInit {
   textWhiteCenter = 'true';
   widthImg = 100;
   textInput = '';
+  number = 0;
+  destroy = false;
 
   constructor() {}
 
@@ -29,5 +31,13 @@ export class DataBindingComponent implements OnInit {
   }
   digitaNome(value: any) {
     console.log(this.digitaNome);
+  }
+
+  incrementa(){
+    this.number++;
+  }
+
+  destroiComponente(){
+    this.destroy = true;
   }
 }

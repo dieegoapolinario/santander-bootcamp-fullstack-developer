@@ -30,3 +30,11 @@
 <app-button [btnText]="'Danger'" [btnType]="'btn-danger'"></app-button>
 <app-button btnText="Primary" btnType="btn-primary"></app-button>
 <app-button btnText="Default" btnType="btn-default"></app-button>
+<hr>
+
+<h1>Life Cycle</h1>
+<app-button btnText="Incrementa" btnType="btn-primary" (click)="incrementa()"></app-button>
+<app-life-cycle [number]="number"></app-life-cycle>
+
+<app-button btnText="Destroi" btnType="btn-secondary" (click)="destroiComponente()"></app-button>
+<app-life-cycle [number]="number" *ngIf="!destroy"></app-life-cycle>
