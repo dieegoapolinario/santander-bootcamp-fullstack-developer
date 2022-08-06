@@ -1,0 +1,13 @@
+<h1>Interpolação</h1>
+<p>DOM p/ Component: {{text}}</p>
+<p>Calculo: {{1+1}}</p>
+<p>Função: {{retornaNome()}}</p>
+
+<h1>Property Binding</h1>
+<img [src]="imageUrl" [alt]="imageDesc">
+
+<h1>Event Binding</h1>
+<button (click)="clicou()">Alterar Nome</button>
+<p>Nome: {{text}}</p>
+<input #input (keyup)="digitaNome(input.value)"><br>
+{{input.value}}
