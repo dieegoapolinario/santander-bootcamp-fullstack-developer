@@ -8,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class DataBindingComponent implements OnInit {
   text = 'Diego';
   imageUrl = 'https://picsum.photos/100/100';
+  imageUrl2 = 'https://picsum.photos/300/300';
   imageDesc = 'imagem aleatória';
+  bgRed = 'red';
+  textWhiteCenter = 'true';
+  widthImg = 100;
+  textInput = '';
 
   constructor() {}
 
@@ -22,7 +27,7 @@ export class DataBindingComponent implements OnInit {
     this.text = 'Apolinario';
     console.log('clicou');
   }
-  digitaNome(value: any){
-    console.log(this.digitaNome)
+  digitaNome(value: any) {
+    console.log(this.digitaNome);
   }
 }
