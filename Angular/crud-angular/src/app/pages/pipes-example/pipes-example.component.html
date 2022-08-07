@@ -1,6 +1,7 @@
 <div class="form-group">
   <label for="number">Number:</label>
   <input type="text" [(ngModel)]="number" id="number" class="form-control">
+  <button class="btn btn-success mt-2" (click)="mudaValor()">Click</button>
 </div>
 
 <div class="mt-3">
@@ -15,12 +16,35 @@
   <p>Uppercase: {{text | uppercase }}</p>
   <p>Lowercase: {{text | lowercase }}</p>
   <p>Titlecase: {{text | titlecase }}</p>
+  <p>Slice(2:8): {{text | slice:2:8 }}</p>
 
   <h1>Date</h1>
   <p>Sem formatação: {{date}}</p>
   <p>Date: {{date | date}}</p>
   <p>Short: {{date | date:'short'}}</p>
   <p>Full: {{date | date:'full'}}</p>
+  <p>Full Uppercase: {{date | date:'full' | uppercase}}</p>
   <p>ShortTime: {{date | date:'shortTime'}}</p>
   <p>dd/MM/YYYY: {{date | date:'dd/MM/YYYY'}}</p>
+
+  <h1>Objeto</h1>
+  <p>JSON: {{people | json}}</p>
+  
+  <h1>Pipe Impuro</h1>
+  <div class="container">
+    <div class="col">
+      <div class="row-6">
+        <div class="form-group">
+          <label for="text">Print Pipe Test:</label><br>
+          <input type="text" name="text" id="text" #nome>
+          <button class="btn btn-primary" (click)="add(nome.value)">add</button>
+        </div>
+      </div>
+      <div class="row-6">
+        <h3>Lista Formatada</h3>
+        <p>Tamanho da lista {{ nomes.length }}</p>
+        <p>{{nomes | printList}}</p>
+      </div>
+    </div>
+  </div>
 </div>
