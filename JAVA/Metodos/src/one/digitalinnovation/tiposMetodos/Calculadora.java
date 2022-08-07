@@ -1,4 +1,4 @@
-package one.digitalinnovation.basecamp;
+package one.digitalinnovation.tiposMetodos;
 
 public class Calculadora {
     public static void soma(double num1, double num2){

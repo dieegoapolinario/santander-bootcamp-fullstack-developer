@@ -1,4 +1,4 @@
-package one.digitalinnovation.basecamp;
+package one.digitalinnovation.tiposMetodos;
 
 public class Mensagem {
     public static void obterMensagem(int hora){
